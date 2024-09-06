@@ -10,16 +10,16 @@ namespace SY22_PRRPRR02_07_Inkapsling {
 			BankAccount account = new BankAccount("Hannes Blåman", "437957487485", 100);
 
 			Console.WriteLine("Kontot för "
-				 + account.GetHolderName() + " (kontonr: "
-				 + account.GetAccountNumber()
-				 + ") har " + account.GetBalance() + "kr");
+				 + account.HolderName + " (kontonr: "
+				 + account.AccountNumber
+				 + ") har " + account.Balance + "kr");
 
-			account.SetHolderName("Per Blåman");
+			account.HolderName = "Per Blåman"; // samma som account.SetHolderName("Per Blåman")
 
 			Console.WriteLine("Kontot för "
-				 + account.GetHolderName() + " (kontonr: "
-				 + account.GetAccountNumber()
-				 + ") har " + account.GetBalance() + "kr");
+				 + account.HolderName + " (kontonr: "
+				 + account.AccountNumber
+				 + ") har " + account.Balance + "kr");
 
 			
 		}
